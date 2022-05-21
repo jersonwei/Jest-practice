@@ -15,3 +15,16 @@ it('异步测试',done => {
     jest.runAllTimers()
     expect(true).toBe(true)
 })
+
+it('异步测试',done => {
+    let mockFn = jest.fn()
+    jest.useFakeTimers()
+    delay(() => {
+        mockFn()
+        mockFn()
+        done()
+    })
+    jest.runAllTimers()
+    expect(mockFn).toBeCalled()
+    expect(mockFn).toBeCalledTimes(2)
+})
