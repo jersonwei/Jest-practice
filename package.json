@@ -1,0 +1,14 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jersonwei/Jest-practice.git",
+  "author": "王伟 <872937094@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^28.1.0"
+  }
+}
